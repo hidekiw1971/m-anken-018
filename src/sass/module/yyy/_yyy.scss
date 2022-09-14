@@ -1,0 +1,7 @@
+@use "global" as *;
+.yyy {
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
