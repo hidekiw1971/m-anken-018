@@ -1,0 +1,8 @@
+@use "global" as *;
+.card__contents-wrap {
+  margin: 0 rem(22);
+  padding-top: rem(4);
+  padding-bottom: rem(16);
+  @include mq(md) {
+  }
+}

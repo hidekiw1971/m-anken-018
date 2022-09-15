@@ -1,0 +1,5 @@
+@use "global" as *;
+.comment-box__massege {
+  @include mq(md) {
+  }
+}

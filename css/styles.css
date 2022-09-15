@@ -175,6 +175,19 @@ select::-ms-expand {
   display: none;
 }
 
+.card__category-datetime-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.card__category-layout {
+  display: inline-block;
+  padding: 0 4px;
+  padding: 0 0.25rem;
+}
 .card__category {
   font-style: normal;
   font-weight: 400;
@@ -186,8 +199,19 @@ select::-ms-expand {
   color: #000;
   background: #ffea2e;
 }
+.card__contents-wrap {
+  margin: 0 22px;
+  margin: 0 1.375rem;
+  padding-top: 4px;
+  padding-top: 0.25rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
 .card__contents {
   background: #fff;
+}
+.card__datetime-layout {
+  display: inline-block;
 }
 .card__datetime {
   font-style: normal;
@@ -214,8 +238,6 @@ select::-ms-expand {
   max-width: 20.9375rem;
 }
 .card__photo {
-  width: 335px;
-  width: 20.9375rem;
   position: relative;
   overflow: hidden;
 }
@@ -244,5 +266,26 @@ select::-ms-expand {
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
   color: #333;
+}
+.comment-box__layout {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+.comment-box__title-layout {
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 8.5px 24px;
+  padding: 0.53125rem 1.5rem;
+}
+.comment-box__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  letter-spacing: 0.4px;
+  letter-spacing: 0.025rem;
+  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
