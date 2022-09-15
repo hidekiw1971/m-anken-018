@@ -36,6 +36,8 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  background: #111;
+  color: #fff;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -73,7 +75,6 @@ select {
 img:not([alt]) {
   filter: blur(10px);
 }
-
 
 /* フォームリセット */
 input,

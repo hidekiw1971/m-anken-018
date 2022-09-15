@@ -1,0 +1,12 @@
+@use "global" as *;
+.card__category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: 1.857;
+  letter-spacing: rem(1);
+  color: #000;
+  background: #ffea2e;
+  @include mq(md) {
+  }
+}

@@ -1,7 +1,5 @@
 @use "global" as *;
-.yyy {
+.card {
   @include mq(md) {
-  }
-  @include mq(xl) {
   }
 }
