@@ -1,0 +1,7 @@
+@use "global" as *;
+.card__category-datetime-wrap {
+  display: flex;
+  justify-content: space-between;
+  @include mq(md) {
+  }
+}

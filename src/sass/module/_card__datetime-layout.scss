@@ -1,0 +1,6 @@
+@use "global" as *;
+.card__datetime-layout {
+  display: inline-block;
+  @include mq(md) {
+  }
+}

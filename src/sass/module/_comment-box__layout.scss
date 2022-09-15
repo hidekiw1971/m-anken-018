@@ -1,0 +1,6 @@
+@use "global" as *;
+.comment-box__layout {
+  margin-bottom: rem(32);
+  @include mq(md) {
+  }
+}

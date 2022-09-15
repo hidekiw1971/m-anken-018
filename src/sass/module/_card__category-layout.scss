@@ -1,0 +1,7 @@
+@use "global" as *;
+.card__category-layout {
+  display: inline-block;
+  padding: 0 rem(4);
+  @include mq(md) {
+  }
+}
