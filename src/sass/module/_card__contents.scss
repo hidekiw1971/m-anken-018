@@ -1,7 +1,6 @@
 @use "global" as *;
-.xxx {
+.card__contents {
+  background: #fff;
   @include mq(md) {
-  }
-  @include mq(xl) {
   }
 }
