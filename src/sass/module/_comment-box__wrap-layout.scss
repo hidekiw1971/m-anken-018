@@ -1,0 +1,5 @@
+@use "global" as *;
+.comment-box__wrap-layout {
+  @include mq(md) {
+  }
+}

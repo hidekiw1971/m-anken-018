@@ -1,5 +1,11 @@
 @use "global" as *;
 .comment-box__massege {
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: calc(35 / 16);
+  letter-spacing: rem(0.4);
+  color: #ffffff;
   @include mq(md) {
   }
 }

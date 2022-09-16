@@ -1,5 +1,8 @@
 @use "global" as *;
 .comment-box__layout {
+  width: rem(335);
+  margin: 0 auto;
+  margin-top: rem(100);
   margin-bottom: rem(32);
   @include mq(md) {
   }

@@ -1,0 +1,7 @@
+@use "global" as *;
+.comment-box__wrap {
+  border: 1px solid #fff;
+  position: relative;
+  @include mq(md) {
+  }
+}

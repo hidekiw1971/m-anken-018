@@ -4,6 +4,10 @@
   border: 1px solid #fff;
   border-radius: 30px;
   padding: rem(8.5) rem(24);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(15%, -50%);
   @include mq(md) {
   }
 }
