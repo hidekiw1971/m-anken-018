@@ -1,0 +1,8 @@
+@use "global" as *;
+.comment-box__massege-layout {
+  margin: 0 rem(10);
+  margin-top: rem(56);
+  margin-bottom: rem(33);
+  @include mq(md) {
+  }
+}
