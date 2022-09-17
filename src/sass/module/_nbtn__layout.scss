@@ -1,0 +1,12 @@
+@use "global" as *;
+.nbtn__layout {
+  display: block;
+  width: rem(335);
+  position: relative;
+}
+
+.nbtn__layout::before {
+  content: "";
+  display: block;
+  padding-top: 14.925%;
+}

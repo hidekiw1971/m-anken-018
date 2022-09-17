@@ -99,6 +99,7 @@ body {
   line-height: 1.5;
   background: #111;
   color: #fff;
+  text-align: center;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -173,6 +174,74 @@ select {
 
 select::-ms-expand {
   display: none;
+}
+
+.btn__inner {
+  width: 335px;
+  width: 20.9375rem;
+  position: relative;
+}
+
+.btn__inner::before {
+  content: "";
+  display: block;
+  padding-top: 14.925%;
+}
+
+.btn__layout {
+  padding: 0;
+  margin-top: 50px;
+  margin-top: 3.125rem;
+}
+
+.btn__link-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.btn__link {
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: 0.75s all linear;
+  transition: 0.75s all linear;
+}
+
+.btn__link:hover {
+  color: #333;
+}
+
+.btn__link::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: -1;
+  -webkit-transition: 0.75s all linear;
+  transition: 0.75s all linear;
+}
+
+.btn__link:hover:before {
+  left: 0%;
+}
+
+.btn {
+  border: 1px solid #fff;
 }
 
 .card__category-datetime-wrap {
@@ -267,6 +336,9 @@ select::-ms-expand {
   letter-spacing: 0.0625rem;
   color: #333;
 }
+.card {
+  display: inline-block;
+}
 .comment-box__layout {
   width: 335px;
   width: 20.9375rem;
@@ -320,5 +392,66 @@ select::-ms-expand {
 .comment-box__wrap {
   border: 1px solid #fff;
   position: relative;
+}
+.nbtn__layout {
+  display: block;
+  width: 335px;
+  width: 20.9375rem;
+  position: relative;
+}
+
+.nbtn__layout::before {
+  content: "";
+  display: block;
+  padding-top: 14.925%;
+}
+
+.nbtn__text-layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nbtn__text {
+  overflow: hidden;
+  -webkit-transition: 0.75s all linear;
+  transition: 0.75s all linear;
+}
+
+.nbtn__text:hover {
+  color: #333;
+}
+
+.nbtn__text::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  right: -100%;
+  -webkit-transition: 0.75s all linear;
+  transition: 0.75s all linear;
+  z-index: -1;
+}
+
+.nbtn__text:hover:before {
+  right: 0;
+}
+
+.nbtn {
+  border: 1px solid #fff;
 }
 /*# sourceMappingURL=styles.css.map */
