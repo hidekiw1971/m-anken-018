@@ -1,5 +1,6 @@
 @use "global" as *;
 .card {
+  display: inline-block;
   @include mq(md) {
   }
 }

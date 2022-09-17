@@ -1,0 +1,11 @@
+@use "global" as *;
+.btn__inner {
+  width: rem(335);
+  position: relative;
+}
+
+.btn__inner::before {
+  content: "";
+  display: block;
+  padding-top: 14.925%;
+}
