@@ -1,0 +1,32 @@
+@use "global" as *;
+.contact__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(25);
+  line-height: calc(36 / 25);
+  letter-spacing: rem(2);
+  position: relative;
+  @include mq(md) {
+  }
+}
+
+.contact__title::before {
+  content: "Contact";
+  display: block;
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(50);
+  line-height: calc(72 / 50);
+  letter-spacing: rem(2);
+  color: #f9f871;
+  opacity: 0.27;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(0%, -108%);
+  @include mq(md) {
+  }
+}

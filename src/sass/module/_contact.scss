@@ -1,0 +1,6 @@
+@use "global" as *;
+.contact {
+  background: #3d3d3d;
+  @include mq(md) {
+  }
+}

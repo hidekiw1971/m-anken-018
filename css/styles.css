@@ -394,75 +394,68 @@ select::-ms-expand {
   border: 1px solid #fff;
   position: relative;
 }
-.nbtn__layout {
-  display: block;
-  width: 335px;
-  width: 20.9375rem;
-  position: relative;
-  margin: 0 auto;
+.contact__layout {
   margin-top: 50px;
   margin-top: 3.125rem;
+  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
+  padding: 64px 0;
+  padding: 4rem 0;
 }
-
-.nbtn__layout::before {
-  content: "";
+.contact__message-layout {
+  text-align: left;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+.contact__message {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4375;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+}
+.contact__title-layout {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
+.contact__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  line-height: 1.44;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  position: relative;
+}
+.contact__title::before {
+  content: "Contact";
   display: block;
-  padding-top: 14.925%;
-}
-
-.nbtn__text-layout {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
+  font-family: "Noto Serif JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  font-size: 3.125rem;
+  line-height: 1.44;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+  color: #f9f871;
+  opacity: 0.27;
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.nbtn__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  font-size: 1.25rem;
-  line-height: 1.45;
-  letter-spacing: 2px;
-  letter-spacing: 0.125rem;
-  overflow: hidden;
-  -webkit-transition: 0.75s all linear;
-  transition: 0.75s all linear;
-}
-
-.nbtn__text:hover {
-  color: #333;
-}
-
-.nbtn__text::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: rgb(255, 255, 255);
-  position: absolute;
-  top: 0;
-  right: -100%;
-  -webkit-transition: 0.75s all linear;
-  transition: 0.75s all linear;
-  z-index: -1;
-}
-
-.nbtn__text:hover:before {
   right: 0;
+  bottom: 0;
+  -webkit-transform: translate(0%, -108%);
+          transform: translate(0%, -108%);
 }
-
-.nbtn {
-  border: 1px solid #fff;
+.contact__wrap-layout {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+.contact {
+  background: #3d3d3d;
 }
 /*# sourceMappingURL=styles.css.map */
