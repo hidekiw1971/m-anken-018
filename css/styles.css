@@ -52,12 +52,6 @@ a {
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
-@media screen and (min-width: 768px) {
-  a:hover {
-    opacity: 0.8;
-  }
-}
-
 *,
 *::before,
 *::after {
@@ -212,6 +206,13 @@ select::-ms-expand {
 }
 
 .btn__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   color: #fff;
   overflow: hidden;
   -webkit-transition: 0.75s all linear;
@@ -398,6 +399,9 @@ select::-ms-expand {
   width: 335px;
   width: 20.9375rem;
   position: relative;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .nbtn__layout::before {
@@ -424,6 +428,13 @@ select::-ms-expand {
 }
 
 .nbtn__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.45;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   overflow: hidden;
   -webkit-transition: 0.75s all linear;
   transition: 0.75s all linear;
