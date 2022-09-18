@@ -1,0 +1,7 @@
+@use "global" as *;
+.contact__message-layout {
+  text-align: left;
+  margin-bottom: rem(40);
+  @include mq(md) {
+  }
+}
