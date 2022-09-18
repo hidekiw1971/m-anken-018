@@ -1,11 +1,4 @@
 @use "global" as *;
 .btn-favarite {
-  @include mq(md) {
-  }
-}
-
-.btn-favarite::before {
-}
-
-.btn-favarite:hover:before {
+  border: 1px solid #fff;
 }

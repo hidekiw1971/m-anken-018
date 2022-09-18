@@ -14,3 +14,4 @@
 - 2022/9/18 btn 部品完成。
 - 2022/9/18 contact 作成中
 - 2022/9/19 contact hover 調整中
+- 2022/9/19 complete favarite article
