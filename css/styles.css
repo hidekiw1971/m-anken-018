@@ -79,6 +79,8 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  -webkit-transition: 0.75s all linear;
+  transition: 0.75s all linear;
 }
 
 /* Set core root defaults */
@@ -302,6 +304,7 @@ select::-ms-expand {
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
   color: #333;
+  text-align: left;
 }
 .card__inner {
   max-width: 335px;
@@ -336,6 +339,7 @@ select::-ms-expand {
   letter-spacing: 1px;
   letter-spacing: 0.0625rem;
   color: #333;
+  text-align: left;
 }
 .card {
   display: inline-block;
@@ -365,7 +369,8 @@ select::-ms-expand {
   line-height: 2.1875;
   letter-spacing: 0.4px;
   letter-spacing: 0.025rem;
-  color: #ffffff;
+  color: #fff;
+  text-align: left;
 }
 .comment-box__title-layout {
   display: inline-block;
@@ -395,6 +400,7 @@ select::-ms-expand {
   position: relative;
 }
 .contact__layout {
+  margin: 0 auto;
   margin-top: 50px;
   margin-top: 3.125rem;
   margin-bottom: 50px;
@@ -452,6 +458,10 @@ select::-ms-expand {
           transform: translate(0%, -108%);
 }
 .contact__wrap-layout {
+  display: inline-block;
+  width: 335px;
+  width: 20.9375rem;
+  margin: 0 auto;
   margin: 0 20px;
   margin: 0 1.25rem;
 }
