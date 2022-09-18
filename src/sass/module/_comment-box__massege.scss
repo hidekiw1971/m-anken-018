@@ -5,7 +5,8 @@
   font-size: rem(16);
   line-height: calc(35 / 16);
   letter-spacing: rem(0.4);
-  color: #ffffff;
+  color: #fff;
+  text-align: left;
   @include mq(md) {
   }
 }

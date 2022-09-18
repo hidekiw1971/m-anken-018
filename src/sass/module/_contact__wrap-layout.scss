@@ -1,5 +1,8 @@
 @use "global" as *;
 .contact__wrap-layout {
+  display: inline-block;
+  width: rem(335);
+  margin: 0 auto;
   margin: 0 rem(20);
   @include mq(md) {
   }
