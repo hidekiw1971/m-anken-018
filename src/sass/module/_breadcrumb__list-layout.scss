@@ -1,0 +1,10 @@
+@use "global" as *;
+.breadcrumb__list-layout {
+  margin-right: rem(5);
+  @include mq(md) {
+  }
+}
+
+.breadcrumb__list-layout:last-child {
+  margin-right: 0;
+}

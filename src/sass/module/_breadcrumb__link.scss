@@ -1,0 +1,11 @@
+@use "global" as *;
+.breadcrumb__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: calc(19 / 16);
+  letter-spacing: rem(1);
+  @include mq(md) {
+  }
+}

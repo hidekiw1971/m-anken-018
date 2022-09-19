@@ -1,0 +1,6 @@
+@use "global" as *;
+.breadcrumb__wrap-layout {
+  display: flex;
+  @include mq(md) {
+  }
+}

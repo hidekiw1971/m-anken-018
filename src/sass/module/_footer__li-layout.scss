@@ -1,0 +1,6 @@
+@use "global" as *;
+.footer__li-layout {
+  margin-bottom: rem(8);
+  @include mq(md) {
+  }
+}

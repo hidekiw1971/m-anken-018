@@ -1,0 +1,44 @@
+@use "global" as *;
+.wp-pagenavi {
+  clear: both;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wp-pagenavi__layout {
+  width: rem(375-40);
+  margin: 0 auto;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+  width: rem(71);
+  color: #fff;
+  //   background-color: #333;
+  border: 1px solid #fff;
+  padding: rem(0) rem(13);
+  //   margin: rem(0) rem(10);
+  white-space: nowrap;
+  transition: 0.2s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: calc(23 / 16);
+  letter-spacing: rem(2);
+}
+
+.wp-pagenavi a:hover {
+  color: #333;
+  background-color: #f9f871;
+  border-color: #fff;
+}
+
+.wp-pagenavi span.current {
+  //   color: #000;
+  //   background-color: #f9f871;
+  border-color: #fff;
+  font-weight: bold;
+}

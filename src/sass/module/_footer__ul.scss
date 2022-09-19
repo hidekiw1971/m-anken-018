@@ -1,0 +1,5 @@
+@use "global" as *;
+.footer__ul {
+  @include mq(md) {
+  }
+}
