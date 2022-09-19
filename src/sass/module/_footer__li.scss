@@ -1,0 +1,11 @@
+@use "global" as *;
+.footer__li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: calc(23 / 16);
+  text-align: center;
+  letter-spacing: rem(1.2);
+  @include mq(md) {
+  }
+}

@@ -1,0 +1,7 @@
+@use "global" as *;
+.footer__li-img {
+  display: inline-block;
+  width: rem(70);
+  @include mq(md) {
+  }
+}

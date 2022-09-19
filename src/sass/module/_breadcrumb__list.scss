@@ -1,0 +1,18 @@
+@use "global" as *;
+.breadcrumb__list {
+  display: inline-block;
+  @include mq(md) {
+  }
+}
+
+.breadcrumb__list::after {
+  content: ">";
+  display: inline-block;
+  margin-left: rem(5);
+  @include mq(md) {
+  }
+}
+
+.breadcrumb__list:last-child:after {
+  display: none;
+}
