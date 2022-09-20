@@ -16,3 +16,4 @@
 - 2022/9/19 contact hover 調整中
 - 2022/9/19 complete favarite article
 - 2022/9/20 breadcrumb 作成完了
+- 2022/9/20 swiper（Thumbs gallery loop）作成開始
