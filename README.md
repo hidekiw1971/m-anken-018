@@ -18,3 +18,4 @@
 - 2022/9/20 breadcrumb 作成完了
 - 2022/9/20 swiper（Thumbs gallery loop）作成開始
 - 2022/9/20 swiper（Thumbs gallery loop）一応動いたけど（navigation が出ない）
+- 2022/9/28 swiper(thumbnail loop)作成再開
