@@ -91,7 +91,6 @@ html {
 /* Set core body defaults */
 body {
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
   line-height: 1.5;
   background: #111;
   color: #fff;
@@ -618,6 +617,14 @@ select::-ms-expand {
 .swiper-achievements {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
+}
+
+.swiper_main {
+  position: relative;
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .swiper-slide {
@@ -636,6 +643,40 @@ select::-ms-expand {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgb(255, 234, 46);
+  width: auto;
+  width: initial;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px;
+  font-size: 1.25rem;
+  background: rgb(17, 17, 17);
+  width: 50px;
+  width: 3.125rem;
+  height: 50px;
+  height: 3.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2.8125rem;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .wp-pagenavi {

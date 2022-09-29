@@ -49,5 +49,19 @@ jQuery(function ($) {
   });
 
   // swiper
-  const mySwiper = new Swiper(".swiper", {});
+  const mySwiper_thumb = new Swiper(".swiper_thumb", {
+    slidesPerView: 8,
+    spaceBetween: 8,
+    grabCursor: true,
+  });
+  const mySwiper_main = new Swiper(".swiper_main", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: mySwiper_thumb,
+    },
+  });
+  // /swiper
 });

@@ -2,6 +2,13 @@
 .swiper-achievements {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: rem(50);
+  // position: relative;
+}
+
+.swiper_main {
+  position: relative;
+  margin-bottom: rem(40);
 }
 
 .swiper-slide {
@@ -19,4 +26,28 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: rgba(255, 234, 46, 1);
+  width: initial;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: rem(20);
+  background: rgba(17, 17, 17, 1);
+  width: rem(50);
+  height: rem(50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(45);
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0;
 }
