@@ -51,3 +51,11 @@
   pointer-events: none;
   opacity: 0;
 }
+
+.swiper-slide-visible.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide-visible {
+  opacity: 0.3;
+}
