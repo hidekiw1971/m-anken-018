@@ -20,3 +20,6 @@
 - 2022/9/20 swiper（Thumbs gallery loop）一応動いたけど（navigation が出ない）
 - 2022/9/28 swiper(thumbnail loop)作成再開
 - 2022/9/30 swiper(thumbnail loop)なんとか形になってきた。
+- 2022/9/30 swiper(thumbnail loop)良い感じになった。
+- 2022/10/1 swiper(breakpoint)を設定してみた。
+- 2022/10/1 swiper(breakpoint)を設定中。
