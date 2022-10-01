@@ -50,9 +50,16 @@ jQuery(function ($) {
 
   // swiper
   const mySwiper_thumb = new Swiper(".swiper_thumb", {
-    slidesPerView: 8,
-    spaceBetween: 8,
-    grabCursor: true,
+    slidesPerView: 1.5,
+    centeredSlides: true,
+    // initialSlide: 3,
+    breakpoints: {
+      768: {
+        slidesPerView: 8,
+      },
+      spaceBetween: 8,
+      grabCursor: true,
+    },
   });
   const mySwiper_main = new Swiper(".swiper_main", {
     navigation: {
