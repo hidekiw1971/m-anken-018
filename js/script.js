@@ -50,6 +50,7 @@ jQuery(function ($) {
 
   // swiper
   const mySwiper_thumb = new Swiper(".swiper_thumb", {
+    loop: true,
     slidesPerView: 1.5,
     centeredSlides: true,
     // initialSlide: 3,
@@ -62,6 +63,7 @@ jQuery(function ($) {
     },
   });
   const mySwiper_main = new Swiper(".swiper_main", {
+    loop: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
