@@ -2,13 +2,57 @@
 .drawerMenu {
   width: rem(24);
   height: 100%;
-  display: inline-block;
-  background: #f00;
+  // background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .drawerMenu span {
+  display: flex;
+  width: 100%;
+  height: rem(2);
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.header .js-drawerMenu span {
+  background: rgba(255, 255, 255, 0);
+}
+
+.drawerMenu span::before {
+  transition: 0.75s;
+  content: "";
   display: block;
   width: 100%;
   height: rem(2);
   background: #fff;
+  position: absolute;
+  transform: translateY(rem(-10));
+}
+
+.header .js-drawerMenu span::before {
+  transform: rotate(45deg);
+}
+
+.drawerMenu span::after {
+  transition: 0.75s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: rem(2);
+  background: #fff;
+  position: absolute;
+  transform: translateY(rem(10));
+}
+
+.header .js-drawerMenu span::after {
+  transform: rotate(-45deg);
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 rem(22);
 }
