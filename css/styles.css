@@ -590,16 +590,82 @@ select::-ms-expand {
   width: 24px;
   width: 1.5rem;
   height: 100%;
-  display: inline-block;
-  background: #f00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .drawerMenu span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 2px;
+  height: 0.125rem;
+  background: rgb(255, 255, 255);
+  position: relative;
+}
+
+.header .js-drawerMenu span {
+  background: rgba(255, 255, 255, 0);
+}
+
+.drawerMenu span::before {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
   height: 0.125rem;
   background: #fff;
+  position: absolute;
+  -webkit-transform: translateY(-0.625rem);
+          transform: translateY(-0.625rem);
+}
+
+.header .js-drawerMenu span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.drawerMenu span::after {
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  height: 0.125rem;
+  background: #fff;
+  position: absolute;
+  -webkit-transform: translateY(0.625rem);
+          transform: translateY(0.625rem);
+}
+
+.header .js-drawerMenu span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 22px;
+  margin: 0 1.375rem;
 }
 
 .footer__layout {
@@ -630,6 +696,10 @@ select::-ms-expand {
   letter-spacing: 1.2px;
   letter-spacing: 0.075rem;
 }
+.header__wrapper {
+  height: 100%;
+}
+
 .header {
   height: 50px;
   height: 3.125rem;
