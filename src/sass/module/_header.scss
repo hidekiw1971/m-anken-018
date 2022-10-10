@@ -1,0 +1,24 @@
+@use "global" as *;
+.header {
+  height: rem(50);
+}
+
+.header h1 {
+  width: rem(70);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.header h1::before {
+  content: "";
+  display: block;
+  padding-top: calc(30 / 70 * 100%);
+}
+
+.header h1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

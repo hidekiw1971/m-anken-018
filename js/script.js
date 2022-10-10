@@ -49,28 +49,33 @@ jQuery(function ($) {
   });
 
   // swiper
-  const mySwiper_thumb = new Swiper(".swiper_thumb", {
-    loop: true,
-    slidesPerView: 1.5,
-    centeredSlides: true,
-    // initialSlide: 3,
-    breakpoints: {
-      768: {
-        slidesPerView: 8,
-      },
-      spaceBetween: 8,
-      grabCursor: true,
-    },
-  });
+  // swiper main
   const mySwiper_main = new Swiper(".swiper_main", {
     loop: true,
+    loopedSlides: 8,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    thumbs: {
-      swiper: mySwiper_thumb,
+  });
+  // swiper thumbs
+  const mySwiper_thumb = new Swiper(".swiper_thumb", {
+    loop: true,
+    loopedSlides: 8,
+    slidesPerView: 2,
+    centeredSlides: true,
+    spaceBetween: 24,
+    grabCursor: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 8,
+        spaceBetween: 8,
+      },
     },
   });
+  // controller
+  mySwiper_main.controller.control = mySwiper_thumb;
+  mySwiper_thumb.controller.control = mySwiper_main;
+
   // /swiper
 });

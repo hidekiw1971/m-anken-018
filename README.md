@@ -23,4 +23,5 @@
 - 2022/9/30 swiper(thumbnail loop)良い感じになった。
 - 2022/10/1 swiper(breakpoint)を設定してみた。
 - 2022/10/1 swiper(breakpoint)を設定中。
-- 022/10/3 swiper(centeredSlides)調整中。
+- 2022/10/3 swiper(centeredSlides)調整中。
+- 2022/10/10 swiper 完成。header 部を作成中。
