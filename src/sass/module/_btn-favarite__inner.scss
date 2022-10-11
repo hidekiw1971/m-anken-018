@@ -1,6 +1,7 @@
 @use "global" as *;
 .btn-favarite__inner {
-  width: rem(335);
+  // width: rem(335);
+  width: rem(calc(335 - 2));
   position: relative;
 }
 
