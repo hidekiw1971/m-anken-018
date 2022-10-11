@@ -171,6 +171,59 @@ select::-ms-expand {
   display: none;
 }
 
+.achievements__category {
+  display: inline-block;
+  width: 128px;
+  width: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements__layout {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+}
+
+.achievements__time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 0.4px;
+  letter-spacing: 0.025rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+  width: 88px;
+  width: 5.5rem;
+}
+
+.achievements__timeCategory-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.achievements__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  letter-spacing: 0.4px;
+  letter-spacing: 0.025rem;
+  width: 100%;
+  text-align: left;
+}
+
+.article {
+  display: block;
+}
+
 .breadcrumb__link {
   font-family: "Roboto";
   font-style: normal;
@@ -211,7 +264,8 @@ select::-ms-expand {
   display: block;
   width: 335px;
   width: 20.9375rem;
-  margin: 0 auto;
+  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 .btn__inner {
   width: 335px;
@@ -458,7 +512,10 @@ select::-ms-expand {
   text-align: left;
 }
 .card {
-  display: inline-block;
+  display: block;
+  width: 335px;
+  width: 20.9375rem;
+  margin: 0 auto;
 }
 .comment-box__layout {
   width: 335px;
