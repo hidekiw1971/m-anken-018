@@ -2,7 +2,7 @@
 .breadcrumb-layout {
   display: block;
   width: rem(375 - 40);
-  margin: 0 auto;
+  margin-left: rem(20);
   @include mq(md) {
   }
 }

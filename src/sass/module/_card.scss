@@ -1,6 +1,8 @@
 @use "global" as *;
 .card {
-  display: inline-block;
+  display: block;
+  width: rem(335);
+  margin: 0 auto;
   @include mq(md) {
   }
 }

@@ -26,3 +26,4 @@
 - 2022/10/3 swiper(centeredSlides)調整中。
 - 2022/10/10 swiper 完成。header 部を作成中。
 - 2022/10/11 achievement 制作開始
+- 2022/10/12 article で微妙なズレが発覚。修正対応中。
