@@ -171,19 +171,23 @@ select::-ms-expand {
   display: none;
 }
 
+* {
+  outline: 1px solid magenta;
+}
+
 .achievements__category {
   display: inline-block;
   width: 128px;
   width: 8rem;
   position: relative;
   overflow: hidden;
+  border: solid 1px rgb(255, 255, 255);
+  white-space: nowrap;
 }
-
-.achievements__layout {
-  margin: 0 20px;
-  margin: 0 1.25rem;
+.achievements__time-layout {
+  margin-right: 30px;
+  margin-right: 1.875rem;
 }
-
 .achievements__time {
   font-style: normal;
   font-weight: 400;
@@ -199,6 +203,13 @@ select::-ms-expand {
   width: 5.5rem;
 }
 
+.achievements__timeCategory-wrapper-layout {
+  width: 89.3333333333%;
+  margin: 0 20px;
+  margin: 0 1.25rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
 .achievements__timeCategory-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +219,12 @@ select::-ms-expand {
           align-items: center;
 }
 
+.achievements__title-layout {
+  margin: 0 20px;
+  margin: 0 1.25rem;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
 .achievements__title {
   font-style: normal;
   font-weight: 400;
@@ -216,10 +233,9 @@ select::-ms-expand {
   line-height: 1.75;
   letter-spacing: 0.4px;
   letter-spacing: 0.025rem;
-  width: 100%;
+  width: 89.3333333333%;
   text-align: left;
 }
-
 .article {
   display: block;
 }
@@ -266,6 +282,8 @@ select::-ms-expand {
   width: 20.9375rem;
   margin-left: 20px;
   margin-left: 1.25rem;
+  margin-bottom: 53px;
+  margin-bottom: 3.3125rem;
 }
 .btn__inner {
   width: 335px;
@@ -753,6 +771,10 @@ select::-ms-expand {
   letter-spacing: 1.2px;
   letter-spacing: 0.075rem;
 }
+.header__layout {
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
+}
 .header__wrapper {
   height: 100%;
 }
@@ -787,8 +809,8 @@ select::-ms-expand {
 .swiper-achievements {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 
 .swiper_main {

@@ -1,0 +1,7 @@
+@use "global" as *;
+.achievements__title-layout {
+  margin: 0 rem(20);
+  margin-bottom: rem(16);
+  @include mq(md) {
+  }
+}
