@@ -113,3 +113,7 @@ select {
 select::-ms-expand {
   display: none;
 }
+
+* {
+  outline: 1px solid magenta;
+}

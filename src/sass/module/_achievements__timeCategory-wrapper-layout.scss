@@ -1,0 +1,8 @@
+@use "global" as *;
+.achievements__timeCategory-wrapper-layout {
+  width: calc(100% - (40 / 375 * 100%));
+  margin: 0 rem(20);
+  margin-bottom: rem(16);
+  @include mq(md) {
+  }
+}

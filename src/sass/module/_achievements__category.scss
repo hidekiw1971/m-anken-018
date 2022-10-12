@@ -4,23 +4,8 @@
   width: rem(128);
   position: relative;
   overflow: hidden;
+  border: solid 1px rgba(255, 255, 255, 1);
+  white-space: nowrap;
+  @include mq(md) {
+  }
 }
-
-// .achievements__category::before {
-//   content: "";
-//   display: block;
-//   padding-top: calc(40 / 128 * 100%);
-// }
-
-// .achievements__category p {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: rem(16);
-//   line-height: calc(23 / 16);
-//   letter-spacing: rem(2);
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   white-space: nowrap;
-// }

@@ -3,6 +3,7 @@
   display: block;
   width: rem(375 - 40);
   margin-left: rem(20);
+  margin-bottom: rem(53);
   @include mq(md) {
   }
 }

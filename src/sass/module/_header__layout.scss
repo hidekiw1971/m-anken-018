@@ -1,0 +1,6 @@
+@use "global" as *;
+.header__layout {
+  margin-bottom: rem(16);
+  @include mq(md) {
+  }
+}
