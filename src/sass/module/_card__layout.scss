@@ -1,0 +1,11 @@
+@use "global" as *;
+.card__layout {
+  margin: 0 auto;
+  margin-bottom: rem(24);
+  @include mq(md) {
+  }
+}
+
+.card__layout:last-child {
+  margin-bottom: rem(0);
+}

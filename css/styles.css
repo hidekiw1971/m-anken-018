@@ -171,10 +171,6 @@ select::-ms-expand {
   display: none;
 }
 
-* {
-  outline: 1px solid magenta;
-}
-
 .achievements__category {
   display: inline-block;
   width: 128px;
@@ -235,6 +231,10 @@ select::-ms-expand {
   letter-spacing: 0.025rem;
   width: 89.3333333333%;
   text-align: left;
+}
+.article__layout {
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 .article {
   display: block;
@@ -369,8 +369,8 @@ select::-ms-expand {
 .btn-favarite__layout {
   margin: 0 20px;
   margin: 0 1.25rem;
-  margin-bottom: 50px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
   padding: 0;
 }
 
@@ -498,6 +498,16 @@ select::-ms-expand {
   max-width: 335px;
   max-width: 20.9375rem;
 }
+.card__layout {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+.card__layout:last-child {
+  margin-bottom: 0px;
+  margin-bottom: 0rem;
+}
+
 .card__photo {
   position: relative;
   overflow: hidden;
@@ -533,7 +543,6 @@ select::-ms-expand {
   display: block;
   width: 335px;
   width: 20.9375rem;
-  margin: 0 auto;
 }
 .comment-box__layout {
   width: 335px;
@@ -541,8 +550,8 @@ select::-ms-expand {
   margin: 0 auto;
   margin-top: 100px;
   margin-top: 6.25rem;
-  margin-bottom: 32px;
-  margin-bottom: 2rem;
+  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 .comment-box__massege-layout {
   margin: 0 10px;
@@ -574,6 +583,8 @@ select::-ms-expand {
   left: 0;
   -webkit-transform: translate(15%, -50%);
           transform: translate(15%, -50%);
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .comment-box__title {
   font-style: normal;
@@ -586,6 +597,10 @@ select::-ms-expand {
   color: #fff;
   background: #111;
 }
+.comment-box__wrap-layout {
+  margin-bottom: 54px;
+  margin-bottom: 3.375rem;
+}
 .comment-box__wrap {
   border: 1px solid #fff;
   position: relative;
@@ -594,8 +609,8 @@ select::-ms-expand {
   margin: 0 auto;
   margin-top: 50px;
   margin-top: 3.125rem;
-  margin-bottom: 50px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
   padding: 64px 0;
   padding: 4rem 0;
 }
@@ -894,6 +909,8 @@ select::-ms-expand {
   width: 335px;
   width: 20.9375rem;
   margin: 0 auto;
+  margin-bottom: 120px;
+  margin-bottom: 7.5rem;
 }
 
 .wp-pagenavi a,

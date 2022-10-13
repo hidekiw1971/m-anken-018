@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   transform: translate(15%, -50%);
+  margin-bottom: rem(32);
   @include mq(md) {
   }
 }
