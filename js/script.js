@@ -8,15 +8,31 @@ jQuery(function ($) {
   $(window).scroll(function () {
     if ($(this).scrollTop() > 70) {
       // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+      // topBtn.fadeIn();
     } else {
       // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+      // topBtn.fadeOut();
+    }
+  });
+
+  // scroll位置情報確認
+  $(window).scroll(function () {
+    var position = $(this).scrollTop();
+    console.log(position);
+  });
+
+  // headerの透明度の設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 70) {
+      $(".header").css("background", "rgba(17,17,17,1)");
+    } else {
+      $(".header").css("background", "rgba(17,17,17,0.5)");
     }
   });
 
   // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
+  // topBtn.click(function () {
+  $(".smoothScroll").click(function () {
     $("body,html").animate(
       {
         scrollTop: 0,
@@ -28,8 +44,9 @@ jQuery(function ($) {
   });
 
   //ドロワーメニュー
-  $(".drawerMenu").click(function () {
-    $(".drawerMenu").toggleClass("js-drawerMenu");
+  $(".drawerMenu-btn").click(function () {
+    $(".drawerMenu-btn").toggleClass("js-drawerMenu-btn");
+    $(".js-drawerMenu-list").toggleClass("js-drawerMenu-list-open");
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)

@@ -1,5 +1,5 @@
 @use "global" as *;
-.drawerMenu {
+.drawerMenu-btn {
   width: rem(24);
   height: 100%;
   // background: #f00;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-.drawerMenu span {
+.drawerMenu-btn span {
   display: flex;
   width: 100%;
   height: rem(2);
@@ -16,11 +16,11 @@
   position: relative;
 }
 
-.header .js-drawerMenu span {
+.header .js-drawerMenu-btn span {
   background: rgba(255, 255, 255, 0);
 }
 
-.drawerMenu span::before {
+.drawerMenu-btn span::before {
   transition: 0.75s;
   content: "";
   display: block;
@@ -31,11 +31,11 @@
   transform: translateY(rem(-10));
 }
 
-.header .js-drawerMenu span::before {
+.header .js-drawerMenu-btn span::before {
   transform: rotate(45deg);
 }
 
-.drawerMenu span::after {
+.drawerMenu-btn span::after {
   transition: 0.75s;
   content: "";
   display: block;
@@ -46,7 +46,7 @@
   transform: translateY(rem(10));
 }
 
-.header .js-drawerMenu span::after {
+.header .js-drawerMenu-btn span::after {
   transform: rotate(-45deg);
 }
 

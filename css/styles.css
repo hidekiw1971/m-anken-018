@@ -284,6 +284,8 @@ select::-ms-expand {
   margin-left: 1.25rem;
   margin-bottom: 53px;
   margin-bottom: 3.3125rem;
+  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .btn__inner {
   width: 335px;
@@ -676,7 +678,7 @@ select::-ms-expand {
   position: relative;
   z-index: 0;
 }
-.drawerMenu {
+.drawerMenu-btn {
   width: 24px;
   width: 1.5rem;
   height: 100%;
@@ -691,7 +693,7 @@ select::-ms-expand {
           align-items: center;
 }
 
-.drawerMenu span {
+.drawerMenu-btn span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,11 +704,11 @@ select::-ms-expand {
   position: relative;
 }
 
-.header .js-drawerMenu span {
+.header .js-drawerMenu-btn span {
   background: rgba(255, 255, 255, 0);
 }
 
-.drawerMenu span::before {
+.drawerMenu-btn span::before {
   -webkit-transition: 0.75s;
   transition: 0.75s;
   content: "";
@@ -720,12 +722,12 @@ select::-ms-expand {
           transform: translateY(-0.625rem);
 }
 
-.header .js-drawerMenu span::before {
+.header .js-drawerMenu-btn span::before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.drawerMenu span::after {
+.drawerMenu-btn span::after {
   -webkit-transition: 0.75s;
   transition: 0.75s;
   content: "";
@@ -739,7 +741,7 @@ select::-ms-expand {
           transform: translateY(0.625rem);
 }
 
-.header .js-drawerMenu span::after {
+.header .js-drawerMenu-btn span::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -797,6 +799,12 @@ select::-ms-expand {
 .header {
   height: 50px;
   height: 3.125rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgb(17, 17, 17);
 }
 
 .header h1 {
@@ -819,6 +827,92 @@ select::-ms-expand {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.js-drawerMenu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(17, 17, 17);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+.js-drawerMenu-list-open {
+  left: 0;
+}
+
+.js-drawerMenu-list a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.4375;
+  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
+}
+
+.js-drawerMenu-list li {
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
+}
+
+.js-rawerMenu-list li:last-child {
+  margin-bottom: 0;
+}
+
+.smoothScroll {
+  display: block;
+  width: 45px;
+  width: 2.8125rem;
+  height: 45px;
+  height: 2.8125rem;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
+.smoothScroll::before {
+  content: "";
+  display: block;
+  width: 23.94px;
+  width: 1.49625rem;
+  height: 2px;
+  background: rgb(51, 51, 51);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-15%, -50%) rotate(45deg);
+          transform: translate(-15%, -50%) rotate(45deg);
+}
+
+.smoothScroll::after {
+  content: "";
+  display: block;
+  width: 23.94px;
+  width: 1.49625rem;
+  height: 2px;
+  background: rgb(51, 51, 51);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-85%, -50%) rotate(-45deg);
+          transform: translate(-85%, -50%) rotate(-45deg);
 }
 
 .swiper-achievements {
