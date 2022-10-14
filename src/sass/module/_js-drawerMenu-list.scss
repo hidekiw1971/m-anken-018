@@ -1,0 +1,36 @@
+@use "global" as *;
+.js-drawerMenu-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(17, 17, 17, 1);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+  transition: 0.75s;
+}
+
+.js-drawerMenu-list-open {
+  left: 0;
+}
+
+.js-drawerMenu-list a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: calc(23 / 16);
+  letter-spacing: rem(2);
+}
+
+.js-drawerMenu-list li {
+  margin-bottom: rem(32);
+}
+
+.js-rawerMenu-list li:last-child {
+  margin-bottom: 0;
+}

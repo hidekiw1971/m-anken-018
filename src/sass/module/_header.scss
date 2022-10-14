@@ -1,6 +1,12 @@
 @use "global" as *;
 .header {
   height: rem(50);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(17, 17, 17, 1);
 }
 
 .header h1 {
