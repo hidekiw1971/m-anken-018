@@ -21,15 +21,6 @@ jQuery(function ($) {
     console.log(position);
   });
 
-  // headerの透明度の設定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      $(".header").css("background", "rgba(17,17,17,1)");
-    } else {
-      $(".header").css("background", "rgba(17,17,17,0.5)");
-    }
-  });
-
   // ボタンをクリックしたらスクロールして上に戻る
   // topBtn.click(function () {
   $(".smoothScroll").click(function () {
@@ -41,6 +32,15 @@ jQuery(function ($) {
       "swing"
     );
     return false;
+  });
+
+  // headerの透明度の設定
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 70) {
+      $(".header").css("background", "rgba(17,17,17,1)");
+    } else {
+      $(".header").css("background", "rgba(17,17,17,0.5)");
+    }
   });
 
   //ドロワーメニュー
