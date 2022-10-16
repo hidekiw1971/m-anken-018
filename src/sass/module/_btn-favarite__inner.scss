@@ -1,8 +1,11 @@
 @use "global" as *;
 .btn-favarite__inner {
-  // width: rem(335);
+  // width: rem(333);
   width: rem(calc(335 - 2));
   position: relative;
+  @include mq(md) {
+    width: 100%;
+  }
 }
 
 .btn-favarite__inner::before {
@@ -10,4 +13,6 @@
   display: block;
   padding-top: calc(42 / 335 * 100%);
   //   background: rgba(255, 255, 255, 1);
+  @include mq(md) {
+  }
 }

@@ -10,6 +10,9 @@
   width: rem(375-40);
   margin: 0 auto;
   margin-bottom: rem(120);
+  @include mq(md) {
+    margin-bottom: rem(105);
+  }
 }
 
 .wp-pagenavi a,

@@ -1,4 +1,6 @@
 @use "global" as *;
 .btn-favarite {
   border: 1px solid #fff;
+  @include mq(md) {
+  }
 }

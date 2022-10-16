@@ -1,5 +1,6 @@
 @use "global" as *;
 .comment-box {
   @include mq(md) {
+    width: rem(800);
   }
 }

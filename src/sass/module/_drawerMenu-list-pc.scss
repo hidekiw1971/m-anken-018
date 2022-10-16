@@ -1,0 +1,81 @@
+@use "global" as *;
+.drawerMenu-list-pc {
+  display: none;
+  @include mq(md) {
+    display: block;
+    height: 100%;
+  }
+}
+
+.drawerMenu-list-pc ul {
+  @include mq(md) {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.drawerMenu-list-pc li {
+  @include mq(md) {
+    margin-right: rem(32);
+  }
+}
+
+.drawerMenu-list-pc li:last-child {
+  margin-right: 0;
+}
+
+.drawerMenu-list-pc a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: calc(35 / 16);
+  letter-spacing: rem(2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.draserMenu-list-pc__inquiry {
+  @include mq(md) {
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.draserMenu-list-pc__inquiry a::before {
+  @include mq(md) {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 0;
+    transition: 0.75s;
+  }
+}
+
+.draserMenu-list-pc__inquiry a:hover:before {
+  transform: translateX(0%);
+}
+
+.draserMenu-list-pc__inquiry a {
+  @include mq(md) {
+    color: rgba(51, 51, 51, 1);
+    padding: 0 rem(32);
+    position: relative;
+  }
+}
+
+.draserMenu-list-pc__inquiry a:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.draserMenu-list-pc__inquiry p {
+  position: relative;
+  z-index: 99;
+}

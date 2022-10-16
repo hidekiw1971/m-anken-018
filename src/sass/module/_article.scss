@@ -1,4 +1,7 @@
 @use "global" as *;
 .article {
   display: block;
+  margin: 0 auto;
+  @include mq(md) {
+  }
 }

@@ -1,3 +1,8 @@
 @use "global" as *;
 .achievements__layout {
+  @include mq(md) {
+    width: rem(800);
+    margin: 0 auto;
+    margin-bottom: rem(80);
+  }
 }
