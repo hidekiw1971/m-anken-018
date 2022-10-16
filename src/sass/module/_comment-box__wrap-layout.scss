@@ -2,5 +2,6 @@
 .comment-box__wrap-layout {
   margin-bottom: rem(54);
   @include mq(md) {
+    margin-bottom: rem(71);
   }
 }
