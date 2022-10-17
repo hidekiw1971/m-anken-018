@@ -2,5 +2,11 @@
 .footer__li-layout {
   margin-bottom: rem(8);
   @include mq(md) {
+    margin-right: rem(32);
+    margin-bottom: 0;
   }
+}
+
+.footer__li-layout:last-child {
+  margin-right: 0;
 }

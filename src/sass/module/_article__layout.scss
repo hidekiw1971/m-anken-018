@@ -1,7 +1,9 @@
 @use "global" as *;
 .article__layout {
+  margin: 0 auto;
   margin-bottom: rem(120);
   @include mq(md) {
     width: rem(1100);
+    margin-bottom: 150px;
   }
 }

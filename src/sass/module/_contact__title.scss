@@ -7,6 +7,9 @@
   letter-spacing: rem(2);
   position: relative;
   @include mq(md) {
+    font-size: rem(30);
+    line-height: calc(35 / 30);
+    letter-spacing: rem(2);
   }
 }
 
@@ -28,5 +31,9 @@
   bottom: 0;
   transform: translate(0%, -108%);
   @include mq(md) {
+    font-size: rem(110);
+    line-height: calc(158 / 110);
+    letter-spacing: rem(2);
+    transform: translate(-115%, -270%);
   }
 }

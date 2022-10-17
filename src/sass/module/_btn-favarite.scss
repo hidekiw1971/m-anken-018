@@ -1,6 +1,9 @@
 @use "global" as *;
 .btn-favarite {
   border: 1px solid #fff;
+  background: rgba(51, 51, 51, 1);
   @include mq(md) {
+    display: flex;
+    justify-content: center;
   }
 }

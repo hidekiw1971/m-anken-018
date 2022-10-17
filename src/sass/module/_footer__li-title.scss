@@ -1,6 +1,6 @@
 @use "global" as *;
-.article {
-  display: block;
+.footer__li-title {
   @include mq(md) {
+    margin-right: auto;
   }
 }

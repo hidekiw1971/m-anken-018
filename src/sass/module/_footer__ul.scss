@@ -1,5 +1,8 @@
 @use "global" as *;
 .footer__ul {
   @include mq(md) {
+    display: flex;
+    margin: 0 rem(32);
+    margin-bottom: rem(75);
   }
 }

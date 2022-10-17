@@ -250,18 +250,19 @@ select::-ms-expand {
 }
 
 .article__layout {
+  margin: 0 auto;
   margin-bottom: 120px;
   margin-bottom: 7.5rem;
 }
 @media screen and (min-width: 768px) {
   .article__layout {
     width: 68.75rem;
+    margin-bottom: 150px;
   }
 }
 
 .article {
   display: block;
-  margin: 0 auto;
 }
 .breadcrumb__link {
   font-family: "Roboto";
@@ -393,12 +394,6 @@ select::-ms-expand {
   width: 20.8125rem;
   position: relative;
 }
-@media screen and (min-width: 768px) {
-  .btn-favarite__inner {
-    width: 100%;
-  }
-}
-
 .btn-favarite__inner::before {
   content: "";
   display: block;
@@ -411,7 +406,6 @@ select::-ms-expand {
   margin-bottom: 2rem;
   padding: 0;
 }
-
 .btn-favarite__link-layout {
   position: absolute;
   top: 0;
@@ -467,7 +461,19 @@ select::-ms-expand {
 
 .btn-favarite {
   border: 1px solid #fff;
+  background: rgb(51, 51, 51);
 }
+@media screen and (min-width: 768px) {
+  .btn-favarite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .btn {
   border: 1px solid #fff;
 }
@@ -546,9 +552,11 @@ select::-ms-expand {
   }
 }
 
-.card__layout:last-child {
-  margin-bottom: 0;
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .card__layout:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
 }
 
 .card__photo {
@@ -675,11 +683,23 @@ select::-ms-expand {
   padding: 64px 0;
   padding: 4rem 0;
 }
+@media screen and (min-width: 768px) {
+  .contact__layout {
+    padding: 9.25rem 0rem;
+  }
+}
+
 .contact__message-layout {
   text-align: left;
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }
+@media screen and (min-width: 768px) {
+  .contact__message-layout {
+    margin-bottom: 3.0625rem;
+  }
+}
+
 .contact__message {
   font-style: normal;
   font-weight: 400;
@@ -688,7 +708,16 @@ select::-ms-expand {
   line-height: 1.4375;
   letter-spacing: 2px;
   letter-spacing: 0.125rem;
+  text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .contact__message {
+    font-size: 1rem;
+    line-height: 2.1875;
+    letter-spacing: 0.125rem;
+  }
+}
+
 .contact__title-layout {
   margin-bottom: 16px;
   margin-bottom: 1rem;
@@ -703,6 +732,14 @@ select::-ms-expand {
   letter-spacing: 0.125rem;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .contact__title {
+    font-size: 1.875rem;
+    line-height: 1.1666666667;
+    letter-spacing: 0.125rem;
+  }
+}
+
 .contact__title::before {
   content: "Contact";
   display: block;
@@ -724,14 +761,29 @@ select::-ms-expand {
   -webkit-transform: translate(0%, -108%);
           transform: translate(0%, -108%);
 }
+@media screen and (min-width: 768px) {
+  .contact__title::before {
+    font-size: 6.875rem;
+    line-height: 1.4363636364;
+    letter-spacing: 0.125rem;
+    -webkit-transform: translate(-115%, -270%);
+            transform: translate(-115%, -270%);
+  }
+}
+
 .contact__wrap-layout {
   display: inline-block;
   width: 335px;
   width: 20.9375rem;
   margin: 0 auto;
-  margin: 0 20px;
-  margin: 0 1.25rem;
+  margin: 0 0;
 }
+@media screen and (min-width: 768px) {
+  .contact__wrap-layout {
+    width: 100%;
+  }
+}
+
 .contact {
   background: #3d3d3d;
   position: relative;
@@ -933,11 +985,28 @@ select::-ms-expand {
   margin-bottom: 8px;
   margin-bottom: 0.5rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__li-layout {
+    margin-right: 2rem;
+    margin-bottom: 0;
+  }
+}
+
+.footer__li-layout:last-child {
+  margin-right: 0;
+}
+
 .footer__li-link {
   display: block;
   width: 100%;
   height: 100%;
 }
+@media screen and (min-width: 768px) {
+  .footer__li-title {
+    margin-right: auto;
+  }
+}
+
 .footer__li {
   font-style: normal;
   font-weight: 400;
@@ -948,6 +1017,16 @@ select::-ms-expand {
   letter-spacing: 1.2px;
   letter-spacing: 0.075rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 2rem;
+    margin-bottom: 4.6875rem;
+  }
+}
+
 .header__layout {
   margin-bottom: 16px;
   margin-bottom: 1rem;
