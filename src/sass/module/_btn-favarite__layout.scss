@@ -3,4 +3,7 @@
   margin: 0 rem(20);
   margin-bottom: rem(32);
   padding: 0;
+  @include mq(md) {
+    // width: rem(1100);
+  }
 }

@@ -3,7 +3,9 @@
   display: inline-block;
   width: rem(335);
   margin: 0 auto;
-  margin: 0 rem(20);
+  // margin: 0 rem(20);
+  margin: 0 0;
   @include mq(md) {
+    width: 100%;
   }
 }

@@ -4,7 +4,6 @@
   width: rem(calc(335 - 2));
   position: relative;
   @include mq(md) {
-    width: 100%;
   }
 }
 
