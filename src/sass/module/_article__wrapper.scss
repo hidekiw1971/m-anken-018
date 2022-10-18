@@ -1,0 +1,6 @@
+@use "global" as *;
+.article__wrapper {
+  background: #f00;
+  @include mq(md) {
+  }
+}

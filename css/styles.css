@@ -262,6 +262,9 @@ select::-ms-expand {
   }
 }
 
+.article__wrapper {
+  background: #f00;
+}
 .article {
   display: block;
 }
