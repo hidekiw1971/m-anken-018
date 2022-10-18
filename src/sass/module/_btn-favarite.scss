@@ -1,9 +1,14 @@
 @use "global" as *;
 .btn-favarite {
+  display: block;
+  width: rem(335);
   border: 1px solid #fff;
   background: rgba(51, 51, 51, 1);
+  overflow: hidden;
   @include mq(md) {
-    display: flex;
-    justify-content: center;
+    // max-width: rem(1100);
+    width: rem(1100);
+    // width: calc(100% - 40px);
+    // width: 100%;
   }
 }
