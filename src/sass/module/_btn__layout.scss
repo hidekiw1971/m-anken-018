@@ -1,4 +1,6 @@
 @use "global" as *;
 .btn__layout {
   padding: 0;
+  @include mq(md) {
+  }
 }
