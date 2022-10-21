@@ -241,6 +241,15 @@ select::-ms-expand {
   text-align: left;
 }
 @media screen and (min-width: 768px) {
+  .article__card-items-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .article__card-items {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -438,6 +447,13 @@ select::-ms-expand {
   left: 0;
 }
 
+.btn-favarite__wrapper-layout {
+  padding: 8px 0;
+  padding: 0.5rem 0;
+}
+.btn-favarite__wrapper {
+  background: rgb(51, 51, 51);
+}
 .btn-favarite {
   display: block;
   width: 335px;

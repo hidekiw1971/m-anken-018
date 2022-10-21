@@ -1,0 +1,7 @@
+@use "global" as *;
+.btn-favarite__wrapper-layout {
+  // margin: 0 rem(20);
+  padding: rem(8) 0;
+  @include mq(md) {
+  }
+}
