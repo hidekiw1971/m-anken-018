@@ -1,7 +1,9 @@
 @use "global" as *;
 .card {
   display: block;
-  width: rem(335);
+  // width: rem(335);
+  max-width: rem(335);
+  width: 100%;
   @include mq(md) {
   }
 }
