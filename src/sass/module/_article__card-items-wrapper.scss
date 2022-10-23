@@ -1,0 +1,9 @@
+@use "global" as *;
+.article__card-items-wrapper {
+  @include mq(md) {
+    display: flex;
+    // width: calc(100% - 40px);
+    width: 100%;
+    // margin: 0 rem(20);
+  }
+}

@@ -1,6 +1,5 @@
 @use "global" as *;
-.card__inner {
-  // max-width: rem(335);
+.article__card-items-wrapper-layout {
   @include mq(md) {
   }
 }

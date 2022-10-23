@@ -2,6 +2,5 @@
 .article__card-items {
   @include mq(md) {
     display: flex;
-    width: rem(1100);
   }
 }

@@ -1,0 +1,6 @@
+@use "global" as *;
+.btn-favarite__wrapper {
+  background: rgba(51, 51, 51, 1);
+  @include mq(md) {
+  }
+}
